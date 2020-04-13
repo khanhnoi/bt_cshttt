@@ -32,6 +32,6 @@ print('So item:', item)
 
 MF =matrix_factorization(A,3,0.01,1000)
 Y =np.array([[round(MF[i][j]) for j in range(item)]for i in range(user)]) #làm tròn
-print('Ma tran ban dau:\n ', A)
-print('Ma tran sau khi ap dung MF:\n ', MF)
-print('Ma tran làm tròn:\n',Y)
+print('Ma tran ban dau: ', A)
+print('Ma tran sau khi ap dung MF: ', MF)
+print('Ma tran làm tròn:',Y)
